@@ -1,0 +1,154 @@
+/* Conor to work on about page */
+/* Add About us nav bar */
+/* karl & conor work on making logo go back to home page */
+
+
+body {
+/*   background: url(img/kitchen.jpeg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*^^^^^^Uncomment above to see page with image^^^^^^^*/
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  margin: 50px 0px;
+/*   padding: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #F98E04;
+  text-shadow: 0 0 3px #9B9B9B;
+  text-align: center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #2B2B2B;
+}
+
+#container, #sign-up-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  width: 250px;
+  cursor: pointer;
+  border-radius: 8px;
+  /*Delete this for buttons w sharp corners*/
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.logo {
+  background: url(/img/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+/* padding: 20px; un-comment this to make it bigger */
+}
+
+.container-box {
+  background-color: white;
+  max-width: 550px;
+  padding: 50px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  /*Delete this for container w sharp corners*/
+  align: center;
+  font-family: 'Orelega One';
+}
+
+
+.row-center {
+  padding: 5px;
+  text-align: center;
+}
+
+
+#log-in-button {
+  background-color: #038ED7;
+  color: white;
+}
+
+
+#log-in-modal, #sign-up-modal {
+  color: black;
+   text-shadow: 0 0 3px #9B9B9B;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #2B2B2B;
+
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+/*   make it a circle */
+  position: absolute;
+  background-color: lightgray;
+  opacity: .95;
+  max-width: 400px;
+  text-align: center;
+/*   margin: -50px; */
+  padding: 50px;
+ /*   border: 1px q #038ED7; */
+}
+
+#log-in-overlay, #sign-up-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+#close-modal-su {
+  width: 60px;
+}
+#close-modal-li {
+  width: 60px;
+}
+
+
+#log-in {
+  width: 60px;
+  background-color: #038ED7;
+  color: white;
+  cursor: pointer;
+}
+
+#submit {
+  width: 60px;
+  background-color: #038ED7;
+  color: white;
+  cursor: pointer;
+}
+
+#home-page {
+  width: 100%;
+}
+
+#nav-logo {
+  width: 20px;
+}
+
+.checked {
+  position: absolute;
+}

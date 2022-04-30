@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pantrillo</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="home.html" rel="homepage" type="html" />
+</head>
+
+
+<body>
+  <!-- NAV -->
+
+  <!-- NAV -->
+<div class="body">
+  <!-- body div isnt necessary, was testing react integration
+
+  <!--   Log in modal begins here -->
+	<div id="log-in-overlay">
+	  <div id="log-in-modal">
+
+		<h2>Log in information</h2>
+
+		<div class="row-center">
+		  <form action="/login" method="post">
+			<input id="email-input" name="email" placeholder="Email"/>
+			<br>
+<!-- need sign-up-password-input and password-input  -->
+			<input id="password-input" name="password" placeholder="Password" type = "password"/>
+			<input type ="checkbox" onclick = "toggleHidePass()" class = "checked">
+		</div>
+		<br>
+		<button id="log-in">Log In</button>
+		</form>
+		<button id="close-modal-li">Back</button><br><br>
+		<div id="error"></div>
+	  </div>
+	</div>
+
+
+	<!--  Log in modal ends here -->
+
+	<!--   Sign Up modal begins here -->
+  <div id="sign-up-overlay">
+	<div id="sign-up-modal">
+
+	  <h2>Sign Up</h2>
+
+	  <div class="row-center">
+		<form action="/users" method="post">
+		  <input id="sign-up-email-input" name="email" placeholder="Email"/>
+		  <br>
+		  <input id="sign-up-password-input" name="password" placeholder="Password" type = "password"/>
+		  <input type ="checkbox" onclick = "toggleHidePassSignUp()" class = "checked">
+	  </div>
+	  <br>
+	  <button id="submit">Submit</button>
+	  </form>
+	  <button id="close-modal-su">Back</button>
+
+	</div>
+  </div>
+  <!--  Sign Up modal ends here -->
+
+
+<!-- Log In / Sign Up / Guest Buttons begin here -->
+  <div class="container-box">
+<!--     make css tag for h1 -->
+	  <h1>Pantrillo</h1>
+		<div class="row-center">
+		  <div class="logo"></div>
+		</div>
+		<br>
+
+	  <div class="row-center">
+		<button id="log-in-button"><h4>Log In</h4></button>
+	</div>
+
+
+	  <div class="row-center">
+		<button id="sign-up-button"><h4>Sign Up</h4></button>
+	  </div>
+
+
+	  <div class="row-center">
+		<a href="home.html"><button class="Guest"><h4>Guest</h4></button></a>
+	  </div>
+  </div>
+<!-- Log In / Sign Up / Guest Buttons end here -->
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
